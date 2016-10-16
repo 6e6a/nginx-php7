@@ -1,0 +1,10 @@
+FROM 6e6a/nginx-php7
+
+#Set port
+EXPOSE 80 443
+
+#Start it
+ENTRYPOINT ["/start.sh"]
+
+#Start web server
+#CMD ["/bin/bash", "/start.sh"]
